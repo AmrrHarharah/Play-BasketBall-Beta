@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Play Basketball</title>
+    <link rel="stylesheet" href="/Assets/CSS/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== Header ===== -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <button
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-label="Buka menu"
+            aria-expanded="false"
+          >
+            <i class="fa fa-basketball-ball"></i>
+          </button>
+          <a href="#" class="logo">Play Basketball</a>
+        </div>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#hero">Home</a>
+          <a href="#gallery">Sponsored</a>
+          <a href="#brands">Info</a>
+          <a href="#testimonials">Top Players</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            id="dark-toggle"
+            class="icon-btn"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            🌙
+          </button>
+          <button
+            id="neon-toggle"
+            class="icon-btn"
+            aria-pressed="false"
+            title="Toggle neon theme"
+          >
+            ⚡
+          </button>
+          <a href="/login/login.html" class="profile-icon"
+            ><i class="fa-regular fa-circle-user fa-xl"></i
+          ></a>
+          <a class="cta" href="/be pro/bepro.html">Be Pro</a>
+        </div>
+      </div>
+      <!-- Mobile nav overlay + sliding panel (hidden on desktop) -->
+      <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+        <div class="mobile-panel">
+          <button id="mobile-close" class="close-btn" aria-label="Tutup menu">
+            <i class="fa fa-times"></i>
+          </button>
+          <a href="#hero">Home</a>
+          <a href="#gallery">Sponsored</a>
+          <a href="#brands">Info</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </header>
+    <div id="smooth-wrap">
+      <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+          <div class="container hero-inner">
+            <h1 class="hero-title">
+              A place to display a<br /><span class="accent"
+                >masterpiece of Basketball.</span
+              >
+            </h1>
+            <p class="hero-sub">Showcase artwork and stats of BasketBall. —</p>
+            <div class="hero-gallery" id="gallery">
+              <div class="cards" id="cards">
+                <!-- Tilted cards: use background-image urls or <img> inside for lightbox -->
+                <div
+                  class="card gallery-card"
+                  data-depth="0.08"
+                  style="
+                    background-image: url(&quot;assets/images/kobe2.jpg&quot;);
+                  "
+                  data-img="assets/images/kobe2.jpg"
+                  tabindex="0"
+                  aria-label="Lihat gambar 1"
+                ></div>
+                <div
+                  class="card gallery-card"
+                  data-depth="0.12"
+                  style="
+                    background-image: url(&quot;assets/images/wmb.jpg&quot;);
+                  "
+                  data-img="assets/images/wmb.jpg"
+                  tabindex="0"
+                  aria-label="Lihat gambar 2"
+                ></div>
+                <div
+                  class="card gallery-card"
+                  data-depth="0.18"
+                  style="
+                    background-image: url(&quot;assets/images/giannis.jpg&quot;);
+                  "
+                  data-img="assets/images/giannis.jpg"
+                  tabindex="0"
+                  aria-label="Lihat gambar 3"
+                ></div>
+                <div
+                  class="card gallery-card"
+                  data-depth="0.22"
+                  style="
+                    background-image: url(&quot;assets/images/melo.jpg&quot;);
+                  "
+                  data-img="assets/images/melo.jpg"
+                  tabindex="0"
+                  aria-label="Lihat gambar 4"
+                ></div>
+
+                <div
+                  class="card gallery-card"
+                  data-depth="0.28"
+                  style="
+                    background-image: url(&quot;assets/images/posterdunkja.jpg&quot;);
+                  "
+                  data-img="assets/images/posterdunkja.jpg"
+                  tabindex="0"
+                  aria-label="Lihat gambar 5"
+                ></div>
+                <div
+                  class="card gallery-card"
+                  data-depth="0.34"
+                  style="
+                    background-image: url(&quot;assets/images/currymasterpiece.jpg&quot;);
+                  "
+                  data-img="assets/images/currymasterpiece.jpg"
+                  tabindex="0"
+                  aria-label="Lihat gambar 6"
+                ></div>
+              </div>
+            </div>
+            <div class="hero-cta">
+              <a id="join" class="btn primary" href="#pricing">See Gallery</a>
+              <a class="btn ghost" href="#player-stories">Read more</a>
+            </div>
+          </div>
+        </section>
+        <!-- ===== Trusted Brands (horizontal slider) ===== -->
+        <section class="brands" id="brands">
+          <div class="container">
+            <h2 class="section-title">Trusted by</h2>
+            <div class="brand-container">
+              <div class="brand-track" id="brand-track">
+                <div class="brand-item">
+                  <img src="assets/images/image7.png" alt="Brand 1" />
+                </div>
+                <div class="brand-item">
+                  <img src="assets/images/image8.png" alt="Brand 2" />
+                </div>
+                <div class="brand-item">
+                  <img src="assets/images/image11.png" alt="Brand 3" />
+                </div>
+                <div class="brand-item">
+                  <img src="assets/images/image9.png" alt="Brand 4" />
+                </div>
+                <div class="brand-item">
+                  <img src="assets/images/image10.png" alt="Brand 5" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ===== Stats / Counters ===== -->
+        <section class="stats" id="stats">
+          <div class="container stats-inner">
+            <div class="stat-card">
+              <h3><span class="count" data-target="50">0</span>+</h3>
+              <p>Top Player</p>
+            </div>
+            <div class="stat-card">
+              <h3><span class="count" data-target="450">0</span>+</h3>
+              <p>Brand</p>
+            </div>
+            <div class="stat-card">
+              <h3><span class="count" data-target="569">0</span>+</h3>
+              <p>Player</p>
+            </div>
+            <div class="stat-card">
+              <h3><span class="count" data-target="30">0</span></h3>
+              <p>Team</p>
+            </div>
+          </div>
+        </section>
+        <!-- ===== Testimonials ===== -->
+        <section class="testimonials" id="testimonials">
+          <div class="container">
+            <h2 class="section-title">What Top Player say</h2>
+            <div class="testi-grid">
+              <blockquote class="testi">
+                <p>"Be the best version of yourself in anything that you do"</p>
+                <cite>— Stephen Curry, Top Player</cite>
+              </blockquote>
+              <blockquote class="testi">
+                <p>
+                  "Life has ups and downs, but when one is down, the only way to
+                  go is up"
+                </p>
+                <cite>— Lamello Ball, Top Player</cite>
+              </blockquote>
+              <blockquote class="testi">
+                <p>
+                  "The moment you give up is the moment you let someone else
+                  win"
+                </p>
+                <cite>— Kobe Bryant, Top Player</cite>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+        <!-- ===== Top Player Stories ===== -->
+
+        <section id="player-stories" class="player-stories container">
+          <h2>Top Player Stories</h2>
+
+          <div class="player-card-grid">
+            <!-- LaMelo -->
+            <a href="/Players/lamelo/lamelo.html" class="story-card">
+              <div
+                class="pc-img"
+                style="
+                  background-image: url(&quot;/Assets/images/LaMelo\ Ball\,\ Charlotte\ Hornets\ PG.jpg&quot;);
+                "
+              ></div>
+              <div class="pc-body">
+                <h3>LaMelo Ball</h3>
+                <p>
+                  The Flashy Vision • Handles, flair, dan playmaking yang beda
+                  level.
+                </p>
+              </div>
+            </a>
+
+            <!-- Stephen Curry -->
+            <a href="/Players/curry/curry.html" class="player-card">
+              <div
+                class="pc-img"
+                style="
+                  background-image: url(&quot;/Assets/images/download.jpg&quot;);
+                "
+              ></div>
+              <div class="pc-body">
+                <h3>Stephen Curry</h3>
+                <p>
+                  The Limitless Shooter • Range gila + movement off-ball terbaik
+                  dunia.
+                </p>
+              </div>
+            </a>
+
+            <!-- LeBron -->
+            <a href="story-lebron.html" class="player-card">
+              <div
+                class="pc-img"
+                style="
+                  background-image: url(&quot;/Assets/images/lebron\ james.jpg&quot;);
+                "
+              ></div>
+              <div class="pc-body">
+                <h3>LeBron James</h3>
+                <p>
+                  The King's Legacy • IQ gila, longevity absurd, masih elite di
+                  umur 40.
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- ===== FAQ Accordion ===== -->
+        <section class="faq" id="faq">
+          <div class="container">
+            <h2 class="section-title">Frequently asked</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button class="acc-toggle" aria-expanded="false">
+                  How do I become a top player?
+                </button>
+                <div class="acc-panel">
+                  Focus on fundamentals, practice consistently, and learn from
+                  the best.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="acc-toggle" aria-expanded="false">
+                  What are the requirements to join the league?
+                </button>
+                <div class="acc-panel">
+                  You must be at least 18 years old and have a valid ID.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="acc-toggle" aria-expanded="false">
+                  How can I improve my shooting skills?
+                </button>
+                <div class="acc-panel">
+                  Practice shooting drills, work on your form, and get feedback
+                  from coaches or experienced players.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- ===== Footer ===== -->
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div class="footer-col">
+            <h4>Amr Harharah</h4>
+            <p></p>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </div>
+          <div class="footer-col">
+            <h5>Support</h5>
+            <a href="#">Help center</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+          </div>
+          <div class="footer-col">
+            <p>&copy; <span id="year"></span> Amr — All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Lightbox modal (uses JS to open) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <span class="close" tabindex="0" aria-label="Tutup lightbox"
+        >&times;</span
+      >
+      <img id="lightbox-img" alt="Preview" />
+    </div>
+    <!-- Back to top -->
+    <button id="back-to-top" aria-label="Kembali ke atas">
+      <i class="fa-regular fa-circle-up fa-xl"></i>
+    </button>
+    <!-- === Player Story Modal === -->
+    <div id="story-modal" class="story-modal">
+      <div class="story-content">
+        <span id="story-close" class="story-close">&times;</span>
+        <h2 id="story-title"></h2>
+        <p id="story-text"></p>
+      </div>
+    </div>
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <div class="page-loader-grid">
+        <div class="loader">
+          <svg viewBox="0 0 80 80">
+            <circle r="32" cy="40" cx="40"></circle>
+          </svg>
+        </div>
+        <div class="loader triangle">
+          <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+          </svg>
+        </div>
+        <div class="loader">
+          <svg viewBox="0 0 80 80">
+            <rect height="64" width="64" y="8" x="8"></rect>
+          </svg>
+        </div>
+      </div>
+      <p class="page-loader-text">Loading...</p>
+    </div>
+    <script src="/Assets/script.js"></script>
+  </body>
+</html>
